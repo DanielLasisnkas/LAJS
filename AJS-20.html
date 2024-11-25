@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 20 - Tabuada Personalizada</title>
+</head>
+<body>
+    <h2 class="titulo">Exercício 20 - Tabuada</h2>
+    <button onclick="mostrarTabuada()">Clique para ver a tabuada</button>
+    <script>
+        function mostrarTabuada() {
+            
+            let numero = parseInt(prompt("Digite um número para ver sua tabuada:"));
+
+            
+            if (isNaN(numero)) {
+                window.alert("Por favor, insira um número válido.");
+                return;
+            }
+
+            let resultado = "";
+
+            
+            for (let i = 1; i <= 10; i++) {
+                let produto = numero * i;
+                resultado += numero + " x " + i + " = " + produto + "<br>";
+            }
+
+            
+            document.body.innerHTML += "<h3>Tabuada de " + numero + ":</h3>" + resultado;
+        }
+    </script>
+</body>
+</html>

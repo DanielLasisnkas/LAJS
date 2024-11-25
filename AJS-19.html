@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 19 - Tabuada</title>
+</head>
+<body>
+    <h2 class="titulo">Exercício 19 - Tabuada de 1 até 10</h2>
+    <button onclick="imprimirTabuada()">Aperte para ver a tabuada</button>
+    <script>
+        function imprimirTabuada() {
+            let resultado = "";
+
+            
+            for (let i = 1; i <= 10; i++) {
+                resultado += "<h3>Tabuada do " + i + "</h3>";
+                
+               
+                for (let j = 1; j <= 10; j++) {
+                    let produto = i * j;
+                    resultado += i + " x " + j + " = " + produto + "<br>";
+                }
+                resultado += "<br>";
+            }
+            
+            
+            document.body.innerHTML += resultado;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 22 - Quociente e Resto</title>
+</head>
+<body>
+    <h2 class="titulo">Exercício 22 - Quociente e Resto</h2>
+    <button onclick="calcularQuocienteEResto()">Clique para calcular</button>
+    <script>
+        function calcularQuocienteEResto() {
+           
+            let A = parseInt(prompt("Digite o valor de A:"));
+            let B = parseInt(prompt("Digite o valor de B:"));
+            
+           
+            if (B === 0) {
+                window.alert("Erro: Não é possível dividir por zero!");
+                return;
+            }
+
+           
+            let quociente = Math.floor(A / B);  // Quociente da divisão inteira
+            let resto = A % B;  // Resto da divisão
+
+            
+            window.alert("Quociente: " + quociente + "\nResto: " + resto);
+        }
+    </script>
+</body>
+</html>

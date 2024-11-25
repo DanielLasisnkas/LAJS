@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 17 - Conversão de Temperatura</title>
+</head>
+<body>
+    <h2 class="titulo">Exercício 17 - Conversão de Temperatura</h2>
+    <button onclick="converterTemperatura()">Aperte</button>
+    <script>
+        function converterTemperatura() {
+          
+            let fahrenheit = parseFloat(prompt("Digite a temperatura em Fahrenheit"));
+
+        
+            let celsius = (5 * (fahrenheit - 32)) / 9;
+
+         
+            window.alert(fahrenheit + "°F é igual a " + celsius.toFixed(2) + "°C");
+        }
+    </script>
+</body>
+</html>
